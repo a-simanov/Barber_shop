@@ -1,126 +1,76 @@
-.header {  
-    position: fixed;  
+.header {
     width: 100%;
-    background-color: #2B4074;
-    z-index: 2;
-    box-shadow: 0px 0px 5px 0px rgba(155, 155, 155, 0.5);    
-    
-    &__wrapper {      
-        height: 80px;
-        display: flex;
-        justify-content: space-between;
+    background-color: $white;
 
-        @media ($sm) {
-          height: 100px;
-        }
+    &__inner {
+        display: flex;
+        margin: 0 115px;
+        flex-direction: row;
     }
 
     &__logo {
-        width: 100px;
-        height: 63.73px;
-        margin: 7px 25px;
+        display: flex;
+        align-items: end;        
+        color: $lightblue;
+        font-weight: 600;
+        font-size: 40px;
+        font-family: 'Catamaran', sans-serif;
+    }
 
-        @media ($sm) {
-          margin: 17px 25px;
+    &__nav {
+        display: flex;
+        justify-content: end;
+        margin-left: 110px;
+    }
+
+    &__link {
+        padding: 65px 24px 8px 24px;
+        font-family: 'Catamaran', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        color: $darkblue;
+
+        &:hover {
+            background-color: $lightblue2;
+            color: $white;
+            border-radius: 0 0 5px 5px;
+            transition: 0.25s background-color ease-in;
+        }
+    }
+
+    &__profile {
+        margin-top: 65px;
+        margin-left: 412px;
+    }
+
+    &__notification {
+        position: relative;
+        margin-top: 65px;
+        margin-left: 65px;
+
+        & img:last-child {
+            position: absolute;
+            top: 31px;
+            left: 9px;
+        }
+    }
+
+    &__appointment {
+        width: 188px;
+        height: 76px;
+        margin-top: 46px;
+        margin-left: 76px;
+        background-color: $lightblue2;
+        color: $white;
+        font-family: 'Catamaran', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        border-radius: 5px;
+        box-shadow: 0 20px 50px rgba(153, 186, 237, 0.5);;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $lightblue;
         }
     }
 }
-
-#nav-menu {
-    opacity: 0;    
-  }
-
-.header-nav__btn {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;    
-    z-index: 4;
-    background-color: #fff;
-    border-radius: 3px;
-
-    @media ($sm) {
-      top: 30px;
-      right: 30px;
-    }
-  }
-
-.header-nav__btn > span,
-.header-nav__btn > span::before,
-.header-nav__btn > span::after {
-    display: block;
-    position: absolute;
-    left: 14px;
-    width: 12px;
-    height: 2px;
-    background-color: #2B4074;
-}
-.header-nav__btn > span::before {
-    content: '';
-    top: -4px;
-    left: 0;
-}
-.header-nav__btn > span::after {
-content: '';
-    top: 4px;
-    left: 0;
-}
-
-.menu-list {
-    display: block;
-    position: absolute;
-    visibility: hidden;
-    top: 0;    
-    width: 300px;
-    min-height: 100vh;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #2B4074;
-    box-shadow: -5px 0px 3px rgba(241, 239, 239, 0.2);
-    transform: translateX(45px);
-    transition: transform 0.25s ease-in;
-  }
-
-.menu-list__link {
-    display: block;
-    padding: 12px 24px;
-    color: #fff;
-    font-family: $RobotoCondensed;
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-  }
-.menu-list__link:hover {
-    background-color: #CFD8DC;
-  }
-
-#nav-menu:checked ~ .header-nav__btn > span {
-    transform: rotate(45deg);
-  }
-#nav-menu:checked ~ .header-nav__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-#nav-menu:checked ~ .header-nav__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-#nav-menu:checked ~ .menu-list {
-    visibility: visible;
-    right: 0;
-    z-index: 2;
-    transform: translateX(0);
-  }
-
-  .swiper-buttons{
-    display: none;
-
-    @media($sm) {
-      display:flex
-  }
-  }

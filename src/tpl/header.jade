@@ -1,19 +1,18 @@
-header.header  
-  .container
-    .header__wrapper
-      img.header__logo(src='img/Header_logo.png', alt="Logo")
-      .header-nav
-        input(type="checkbox" id="nav-menu")
-        label(for="nav-menu").header-nav__btn
-          span
-        ul.menu-list
-          li.menu-list__link
-            a(href='#') Menu item
-          li.menu-list__link
-            a(href='#') Menu item
-          li.menu-list__link
-            a(href='#') Menu item
-          li.menu-list__link
-            a(href='#') Menu item
-          li.menu-list__link
-            a(href='#') Menu item
+header.header
+  .section
+    .container
+      .header__inner        
+        .header__logo
+          img(src="../img/header-logo.jpg", alt="")
+          span arber
+        .header__nav
+          a.header__link(href="#") Home
+          a.header__link(href="#") History
+          a.header__link(href="#") Service
+          a.header__link(href="#") Gallery
+        a(href="#").header__profile
+          img(src="../img/header-profile.png", alt="")
+        a(href="#").header__notification
+          img(src="../img/notification-bell.png", alt="")
+          img(src="../img/notification-lick.png", alt="")
+        button.header__appointment Appointment
