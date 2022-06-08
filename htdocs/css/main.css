@@ -453,8 +453,8 @@
   background-color: #fff; }
   .header__inner {
     display: flex;
-    margin: 0 115px;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between; }
   .header__logo {
     display: flex;
     align-items: end;
@@ -478,12 +478,10 @@
       border-radius: 0 0 5px 5px;
       transition: 0.25s background-color ease-in; }
   .header__profile {
-    margin-top: 65px;
-    margin-left: 412px; }
+    margin-top: 65px; }
   .header__notification {
     position: relative;
-    margin-top: 65px;
-    margin-left: 65px; }
+    margin-top: 65px; }
     .header__notification img:last-child {
       position: absolute;
       top: 31px;
@@ -492,7 +490,6 @@
     width: 188px;
     height: 76px;
     margin-top: 46px;
-    margin-left: 76px;
     background-color: #A3C1EF;
     color: #fff;
     font-family: 'Catamaran', sans-serif;
@@ -529,15 +526,11 @@ button {
   border: none; }
 
 .container {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 20px; }
-  @media (min-width: 640px) {
-    .container {
-      padding: 0 60px; } }
+  max-width: 1420px;
+  margin: 0 auto; }
 
 main {
-  padding-top: 80px; }
+  padding-top: 50px; }
 
 .btn {
   width: 230px;
@@ -553,6 +546,12 @@ main {
   .btn:hover {
     background-color: #163561; }
 
+.intro {
+  font-family: 'Catamaran', sans-serif; }
+  .intro__logo {
+    position: absolute;
+    right: 0; }
+
 .component__title {
   padding: 20px 0;
   font-weight: bold;
@@ -561,7 +560,8 @@ main {
 
 .section {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative; }
   .section_gradient {
     background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%); }
   .section_cream {
