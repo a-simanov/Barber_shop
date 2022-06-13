@@ -1,0 +1,16 @@
+.history {
+    display: flex;
+    font-family: 'Catamaran', sans-serif;
+    justify-content: end;
+
+    &__logo {
+        position: absolute;
+        right: 0;
+        left: 100px;
+        margin-right: 150px;
+    }
+
+    &__content {
+        margin-top: 50px;
+    }
+}

@@ -4,5 +4,28 @@
     &__logo {
         position: absolute;
         right: 0;
+        top: -100px;
+    }
+
+    &__title {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 100px;
+        max-width: 630px;
+        margin-top: 115px;
+        color: $blue;
+
+        & span {
+            color: $yellow;
+        }
+    }
+
+    &__text {
+        margin-top: 30px;
+        color: $blue;
+        max-width: 520px;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 38px;
     }
 }

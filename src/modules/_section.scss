@@ -1,10 +1,11 @@
 .section {
     width: 100%;    
     background-color: $white;
-    position: relative;
+    position: relative;    
 
-    &_gradient {
-        background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+    &_gradient {        
+        margin-top: 200px;
+        border-image-source: url("../img/border-gradient.jpg");
     }
 
     &_cream {
