@@ -1,16 +1,38 @@
 .section {
     width: 100%;    
-    background-color: $white;
-    position: relative;    
+    background-color: $white;      
 
     &_gradient {        
         margin-top: 200px;
-        border-image-source: url("../img/border-gradient.jpg");
-        border-image-width: 50px;
+        position: relative;          
     }
 
     &_cream {
         background-color: $cream;
         padding-bottom: 40px;
+    }
+
+    &__corner {
+        position: absolute;
+        top: 0;
+        right: 0;       
+
+        &_invert-Y {
+            top: 0;
+            left: 0;          
+            transform: scale(-1, 1);
+        }
+
+        &_invert-X {
+            top: 380px;
+            right: 0;            
+            transform: scale(1, -1);
+        }
+
+        &_invert-XY {
+            top: 380px;
+            left: 0;
+            transform: scale(-1, -1);
+        }
     }
 }
