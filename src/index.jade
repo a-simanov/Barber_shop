@@ -50,5 +50,46 @@ block page
 								img(src="../img/Services/services-3.svg", alt="")
 							.services__item-title Facial Pack
 							.services__item-text long established fact that a reacted by the readable content of hen looking at.
+	section.section.section_gradient
+		img.section__corner(src="../img/border-gradient.jpg", alt="")
+		img.section__corner.section__corner_invert-Y(src="../img/border-gradient.jpg", alt="")
+		.container
+			.gallery
+				.title.title_center Our
+					span Gallery
+				.gallery__list
+					.component
+						.grid
+							-
+								let galleryItems = [
+									{
+										src: "../img/Gallery/gallery-1.jpg"
+									},
+									{
+										src: "../img/Gallery/gallery-2.jpg"
+									},
+									{
+										src: "../img/Gallery/gallery-3.jpg"
+									},
+									{
+										src: "../img/Gallery/gallery-4.jpg"
+									},
+									{
+										src: "../img/Gallery/gallery-5.jpg"
+									},
+									{
+										src: "../img/Gallery/gallery-6.jpg"
+									}
+								];
+							each galleryItem in galleryItems
+								.grid__col.grid__col_12.grid__md-col_6.grid__xl-col_4
+									.gallery__item
+										img.gallery__img(src=galleryItem.src, alt="Logo")
+				button.button.button_mt View all
+	.modal
+		.modal__inner
+			img.modal__img(src="#", alt="#")
+			button.modal__close
+				img(src="../img/close.svg", alt="")
 
 		

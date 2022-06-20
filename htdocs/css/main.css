@@ -650,3 +650,46 @@ main {
 
 .services__item:hover .services__item-text {
   color: #fff; }
+
+.gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .gallery__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px; }
+  .gallery__item {
+    overflow: hidden;
+    width: 435px;
+    height: 435px;
+    margin-top: 37px;
+    margin-right: 37px; }
+  .gallery__img {
+    width: 435px;
+    height: 435px; }
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); }
+  .modal__inner {
+    position: relative; }
+  .modal__img {
+    width: 800px; }
+  .modal__close {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: -50px;
+    right: -50px; }
+    .modal__close img {
+      display: block; }
