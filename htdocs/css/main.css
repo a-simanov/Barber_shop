@@ -455,13 +455,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-  .header__logo {
-    display: flex;
-    align-items: end;
-    color: #99BAED;
-    font-weight: 600;
-    font-size: 40px;
-    font-family: 'Catamaran', sans-serif; }
   .header__nav {
     display: flex;
     justify-content: end;
@@ -534,6 +527,27 @@ input {
 main {
   padding-top: 50px; }
 
+.logo {
+  display: flex;
+  align-items: end;
+  color: #99BAED;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: 'Catamaran', sans-serif; }
+  .logo_center {
+    text-align: center; }
+
+.text {
+  color: #163561;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 3%;
+  text-align: center; }
+  .text_footer {
+    width: 526px;
+    margin: 35px 0; }
+
 .intro {
   font-family: 'Catamaran', sans-serif; }
   .intro__logo {
@@ -579,6 +593,8 @@ main {
       top: 380px;
       left: 0;
       transform: scale(-1, -1); }
+    .section__corner_footer {
+      top: -300px; }
 
 .title {
   font-family: 'Catamaran', sans-serif;
@@ -591,6 +607,25 @@ main {
     text-align: center; }
   .title span {
     color: #FBB400; }
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer__menu {
+  display: flex;
+  justify-content: space-between; }
+
+.footer__menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 67px;
+  background: #fff url("../img/Footer/footer-i.svg") center no-repeat; }
+  .footer__menu-item:nth-child(2) {
+    margin: 0 25px; }
 
 .history {
   display: flex;
@@ -666,6 +701,8 @@ main {
     height: 435px;
     margin-top: 37px;
     margin-right: 37px; }
+    .gallery__item:hover {
+      cursor: pointer; }
   .gallery__img {
     width: 435px;
     height: 435px; }

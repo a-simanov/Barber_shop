@@ -13,4 +13,5 @@ for (let i = 0; i < gallery.length; i++) {
 
 modalClose.onclick = function() {
     modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
 }

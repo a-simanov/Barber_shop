@@ -56,3 +56,30 @@ input {
 main {
     padding-top: 50px;
 }
+
+.logo {
+    display: flex;
+    align-items: end;        
+    color: $lightblue;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'Catamaran', sans-serif;
+
+        &_center {
+            text-align: center;
+        }
+}
+
+.text {
+    color: $blue;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 3%;
+    text-align: center;
+
+    &_footer {
+        width: 526px;
+        margin: 35px 0;
+    }
+}
