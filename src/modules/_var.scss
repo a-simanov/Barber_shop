@@ -18,10 +18,10 @@ $yellow: #FBB400;
 
 
 // MEDIA
-$xl: 'min-width: 1400px'; // laptop
-$lg: 'min-width: 1024px'; // laptop
-$md: 'min-width: 768px'; // tablet
-$sm: 'min-width: 640px'; // phone
+$xl: 'max-width: 1440px'; // laptop
+$lg: 'max-width: 1024px'; // laptop
+$md: 'max-width: 768px'; // tablet
+$sm: 'max-width: 640px'; // phone
 
 //Fonts
 $RobotoCondensed: 'Roboto Condensed', sans-serif;

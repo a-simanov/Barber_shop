@@ -23,4 +23,11 @@
             margin: 0 25px;
         }
     }
+
+    &__border {
+        height: 1px;
+        width: 1367px;
+        background-color: $lightblue;
+        margin-top: 50px;
+    }
 }

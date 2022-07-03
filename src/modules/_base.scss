@@ -48,9 +48,17 @@ input {
 }
 
 .container {
-    position: relative;
-    max-width: 1420px;
+    position: relative;    
     margin: 0 auto;
+    //overflow: hidden;
+    max-width: 1400px;    
+
+    @media ($xl) {
+        max-width: 1400px;
+    }
+    @media ($lg) {
+        max-width: 1024px;
+    }
 }
 
 main {
@@ -81,5 +89,17 @@ main {
     &_footer {
         width: 526px;
         margin: 35px 0;
+    }
+}
+
+.img {
+    width: 100%;
+
+    @media ($lg) {
+        width: 80%;
+    }
+
+    @media ($md) {
+        display: none;
     }
 }

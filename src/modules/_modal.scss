@@ -15,7 +15,7 @@
     }
 
     &__img {
-        width: 800px;
+        width: 800px;        
     }
 
     &__close {
@@ -27,6 +27,10 @@
 
         img {
             display: block;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }

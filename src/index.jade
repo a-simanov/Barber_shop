@@ -3,8 +3,7 @@ extends ./tpl/layout
 block page
 	section.section
 		.container
-			.intro
-				img.intro__logo(src="../img/Intro/Intro-i.jpg", alt="")
+			.intro				
 				.intro__content
 					.title 
 						span Hairstyle 
@@ -12,13 +11,14 @@ block page
 						.br The Personality 
 						.br Inside You
 					.intro__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at.
-					button.button.button_mt Get Started
+				img.img.intro__logo(src="../img/Intro/Intro-i.svg", alt="")
+			button.button.button_mt Get Started
 	section.section.section_gradient
 		img.section__corner(src="../img/border-gradient.jpg", alt="")
 		img.section__corner.section__corner_invert-Y(src="../img/border-gradient.jpg", alt="")
 		.container
 			.history
-				img.history__logo(src="../img/history-logo.jpg", alt="")
+				img.img.history__logo(src="../img/history-logo.png", alt="")
 				.history__content
 					.title Our 
 						span History
@@ -82,7 +82,7 @@ block page
 									}
 								];
 							each galleryItem in galleryItems
-								.grid__col.grid__col_12.grid__md-col_6.grid__xl-col_4
+								.grid__col.grid__col_4.grid__md-col_6.grid__xl-col_3
 									.gallery__item
 										img.gallery__img(src=galleryItem.src, alt="Logo")
 				button.button.button_mt View all

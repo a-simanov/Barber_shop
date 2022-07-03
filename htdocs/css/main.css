@@ -9,13 +9,13 @@
   flex-wrap: wrap;
   margin: 0 -5px;
   justify-content: center; }
-  @media (min-width: 640px) {
+  @media (max-width: 640px) {
     .grid {
       margin: 0 -15px; } }
 
 .grid__col {
   padding: 0 5px; }
-  @media (min-width: 640px) {
+  @media (max-width: 640px) {
     .grid__col {
       padding: 0 15px; } }
 
@@ -169,7 +169,7 @@
 .grid__push_11 {
   margin-right: 91.66667%; }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   .grid__md-col_0 {
     flex: 0 0 0%;
     max-width: 0%; }
@@ -262,7 +262,7 @@
   .grid__md-order_12 {
     order: 12; } }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .grid__lg-col_0 {
     flex: 0 0 0%;
     max-width: 0%; }
@@ -355,7 +355,7 @@
   .grid__lg-order_12 {
     order: 12; } }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .grid__xl-col_0 {
     flex: 0 0 0%;
     max-width: 0%; }
@@ -521,8 +521,14 @@ input {
 
 .container {
   position: relative;
-  max-width: 1420px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1400px; }
+  @media (max-width: 1440px) {
+    .container {
+      max-width: 1400px; } }
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 1024px; } }
 
 main {
   padding-top: 50px; }
@@ -548,12 +554,34 @@ main {
     width: 526px;
     margin: 35px 0; }
 
+.img {
+  width: 100%; }
+  @media (max-width: 1024px) {
+    .img {
+      width: 80%; } }
+  @media (max-width: 768px) {
+    .img {
+      display: none; } }
+
 .intro {
-  font-family: 'Catamaran', sans-serif; }
+  font-family: 'Catamaran', sans-serif;
+  display: flex; }
+  @media (max-width: 768px) {
+    .intro {
+      text-align: center; } }
   .intro__logo {
-    position: absolute;
-    right: -360px;
-    top: -100px; }
+    width: 70%;
+    z-index: 2;
+    margin-left: 50px; }
+    @media (max-width: 1024px) {
+      .intro__logo {
+        width: 80%; } }
+    @media (max-width: 768px) {
+      .intro__logo {
+        width: 60%; } }
+    @media (max-width: 640px) {
+      .intro__logo {
+        width: 40%; } }
   .intro__text {
     margin-top: 50px;
     color: #163561;
@@ -561,6 +589,9 @@ main {
     font-size: 25px;
     font-weight: 400;
     line-height: 38px; }
+    @media (max-width: 768px) {
+      .intro__text {
+        max-width: none; } }
 
 .component__title {
   padding: 20px 0;
@@ -579,10 +610,14 @@ main {
     padding-bottom: 40px; }
   .section__corner {
     position: absolute;
-    top: 0;
+    z-index: 1;
+    top: -125px;
     right: 0; }
+    @media (max-width: 1440px) {
+      .section__corner {
+        display: none; } }
     .section__corner_invert-Y {
-      top: 0;
+      top: -125px;
       left: 0;
       transform: scale(-1, 1); }
     .section__corner_invert-X {
@@ -627,14 +662,34 @@ main {
   .footer__menu-item:nth-child(2) {
     margin: 0 25px; }
 
+.footer__border {
+  height: 1px;
+  width: 1367px;
+  background-color: #99BAED;
+  margin-top: 50px; }
+
 .history {
   display: flex;
   font-family: 'Catamaran', sans-serif;
   justify-content: end; }
+  @media (max-width: 768px) {
+    .history {
+      text-align: center; } }
   .history__logo {
     position: absolute;
     left: -150px;
-    margin-right: 150px; }
+    margin-right: 150px;
+    width: 968px;
+    z-index: 2; }
+    @media (max-width: 1024px) {
+      .history__logo {
+        width: 80%; } }
+    @media (max-width: 768px) {
+      .history__logo {
+        width: 60%; } }
+    @media (max-width: 640px) {
+      .history__logo {
+        width: 40%; } }
   .history__content {
     margin-top: 50px; }
 
@@ -642,10 +697,17 @@ main {
   font-family: 'Catamaran', sans-serif;
   margin-top: 300px;
   padding-bottom: 320px; }
+  @media (max-width: 768px) {
+    .services {
+      padding-bottom: 0; } }
   .services__items {
     display: flex;
     margin-top: 80px;
     justify-content: space-around; }
+    @media (max-width: 768px) {
+      .services__items {
+        flex-direction: column;
+        align-items: center; } }
   .services__item {
     display: flex;
     flex-direction: column;
@@ -658,6 +720,9 @@ main {
     padding: 50px 40px;
     cursor: pointer;
     box-shadow: 0 5px 0 0 #99BAED; }
+    @media (max-width: 768px) {
+      .services__item {
+        margin-bottom: 50px; } }
     .services__item:hover {
       background-color: #99BAED; }
   .services__item-logo {
@@ -683,7 +748,7 @@ main {
 .services__item:hover .services__item-title {
   color: #fff; }
 
-.services__item:hover .services__item-text {
+.services__item:hover > .text {
   color: #fff; }
 
 .gallery {
@@ -730,3 +795,5 @@ main {
     right: -50px; }
     .modal__close img {
       display: block; }
+      .modal__close img:hover {
+        cursor: pointer; }
