@@ -3,7 +3,7 @@
 const { src, dest, watch, parallel, series } = require('gulp')
 const del = require('del')
 const browsersync = require('browser-sync').create()
-const sass = require('gulp-sass')
+const sass = require('gulp-sass')(require('sass'));
 const jade = require('gulp-jade')
 const concat = require('gulp-concat')
 

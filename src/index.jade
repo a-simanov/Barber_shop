@@ -3,93 +3,62 @@ extends ./tpl/layout
 block page
 	section.section
 		.container
-			.intro				
-				.intro__content
-					.title 
-						span Hairstyle 
-						| Reflects 
-						.br The Personality 
-						.br Inside You
-					.intro__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at.
-				img.img.intro__logo(src="../img/Intro/Intro-i.svg", alt="")
-			button.button.button_mt Get Started
-	section.section.section_gradient
-		img.section__corner(src="../img/border-gradient.jpg", alt="")
-		img.section__corner.section__corner_invert-Y(src="../img/border-gradient.jpg", alt="")
+			.intro
+				.intro__inner
+					img.intro__bg(src="../img/Intro-picture.png", alt="Intro-picture")
+					img.intro__man(src="../img/Intro-man.png", alt="Intro-man")
+					button.btn.btn_red.link-item Загрузить чек
+	section.section.section_promo
 		.container
-			.history
-				img.img.history__logo(src="../img/history-logo.png", alt="")
-				.history__content
-					.title Our 
-						span History
-					.intro__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at.
-					.intro__text It is a long established fact that a reader will be distracted by the readable content of a page when looking at.
-					button.button.button_mt Learn more
-	section.section.section_gradient
-		img.section__corner.section__corner_invert-X(src="../img/border-gradient.jpg", alt="")
-		img.section__corner.section__corner_invert-XY(src="../img/border-gradient.jpg", alt="")
+			.promo
+				img.promo__img.promo__img_left(src="../img/baloon.svg", alt="Balloon")
+				img.promo__img.promo__img_right(src="../img/Spiral.svg", alt="Spiral")
+				.promo__title НАМ 40 ЛЕТ - ВАМ ПОДАРКИ
+				.promo__inner
+					.promo__item
+						img.promo__logo(src="../img/Promo/Promo-i-1.svg", alt="Promo-icon")
+						.promo__text Покупайте сыр Oltermanni
+						img.promo__arrow(src="../img/arrow.svg", alt="Arrow")
+					.promo__item
+						img.promo__logo(src="../img/Promo/Promo-i-2.svg", alt="Promo-icon")
+						.promo__text Регистрируйте чеки на сайте в  период с 1 сентября по 30 ноября 2020 года
+						img.promo__arrow(src="../img/arrow.svg", alt="Arrow")
+					.promo__item
+						img.promo__logo(src="../img/Promo/Promo-i-3.svg", alt="Promo-icon")
+						.promo__text Получайте гарантированнеы призы - деньги на телефон
+						img.promo__arrow(src="../img/arrow.svg", alt="Arrow")
+					.promo__item
+						img.promo__logo(src="../img/Promo/Promo-i-4.svg", alt="Promo-icon")
+						.promo__text Участвуйте в еженедельных розыгрышах
+						img.promo__arrow(src="../img/arrow.svg", alt="Arrow")
+					.promo__item
+						img.promo__logo(src="../img/Promo/Promo-i-5.svg", alt="Promo-icon")
+						.promo__text Получите возможность выиграть 400 000 &#8381;
+	section.section
 		.container
-			.services				
-				.services__content
-					.title.title_center Services We 
-						.br 
-						span Provide
-					.services__items
-						.services__item
-							.services__item-logo
-								img(src="../img/Services/services-1.svg", alt="")
-							.services__item-title Hair Cut
-							.text long established fact that a reacted by the readable content of hen looking at.
-						.services__item
-							.services__item-logo
-								img(src="../img/Services/services-2.svg", alt="")
-							.services__item-title Beard Cut
-							.text long established fact that a reacted by the readable content of hen looking at.
-						.services__item
-							.services__item-logo
-								img(src="../img/Services/services-3.svg", alt="")
-							.services__item-title Facial Pack
-							.text long established fact that a reacted by the readable content of hen looking at.
-	section.section.section_gradient
-		img.section__corner(src="../img/border-gradient.jpg", alt="")
-		img.section__corner.section__corner_invert-Y(src="../img/border-gradient.jpg", alt="")
-		.container
-			.gallery
-				.title.title_center Our
-					span Gallery
-				.gallery__list
-					.component
-						.grid
-							-
-								let galleryItems = [
-									{
-										src: "../img/Gallery/gallery-1.jpg"
-									},
-									{
-										src: "../img/Gallery/gallery-2.jpg"
-									},
-									{
-										src: "../img/Gallery/gallery-3.jpg"
-									},
-									{
-										src: "../img/Gallery/gallery-4.jpg"
-									},
-									{
-										src: "../img/Gallery/gallery-5.jpg"
-									},
-									{
-										src: "../img/Gallery/gallery-6.jpg"
-									}
-								];
-							each galleryItem in galleryItems
-								.grid__col.grid__col_4.grid__md-col_6.grid__xl-col_3
-									.gallery__item
-										img.gallery__img(src=galleryItem.src, alt="Logo")
-				button.button.button_mt View all
-	.modal
+			.cheese
+				img.cheese__img.cheese__img_left(src="../img/spiral_brown.svg", alt="Spiral-brown")
+				.cheese__title В АКЦИИ УЧАВСТВУЮТ
+				.swiper.cheese__swiper
+					.cheese__slides.swiper-wrapper
+						.cheese__slide.swiper-slide
+							img.cheese__picture(src="../img/Cheese/cheese-i-1.png", alt="Cheese")
+							.cheese__text Лёгкий, брусок 180г
+						.cheese__slide.swiper-slide
+							img.cheese__picture(src="../img/Cheese/cheese-i-2.png", alt="Cheese")
+							.cheese__text Лёгкий, слайсы 120, 225г
+						.cheese__slide.swiper-slide
+							img.cheese__picture(src="../img/Cheese/cheese-i-3.png", alt="Cheese")
+							.cheese__text Сливочный, брусок 200, 300г
+						.cheese__slide.swiper-slide
+							img.cheese__picture(src="../img/Cheese/cheese-i-4.png", alt="Cheese")
+							.cheese__text Сливочный, слайсы 130, 250г
+				.swiper-pagination
+				.swiper-buttons
+					.swiper-button-prev
+					.swiper-button-next
+	.modal.hidden
 		.modal__inner
-			img.modal__img(src="#", alt="#")
+			.modal__content
 			button.modal__close
-				img(src="../img/close.svg", alt="")
-
-		
+				img(src="/img/close.svg", alt="")

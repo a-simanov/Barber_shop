@@ -1,5 +1,4 @@
 .modal { 
-    display: none;
     align-items: center;  
     justify-content: center;
     position: fixed;
@@ -12,13 +11,15 @@
 
     &__inner {
         position: relative;
+        background-color: white;
     }
 
-    &__img {
-        width: 800px;        
+    &__content {
+        width: 600px;     
+        height: 800px;   
     }
 
-    &__close {
+    &__close {        
         position: absolute;
         width: 48px;
         height: 48px;

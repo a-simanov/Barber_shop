@@ -1,21 +1,7 @@
 // colors
-$body: #F2F1EF;
-$white: #fff;
-$darkblue: #163561;
-$cream: #F9F6E5;
-$creamDark: #928d70;
-$creamOpacity: rgba(249, 246, 229, .8);
-$gray: #4A4A4A;
-$lightgray: #797979;
-$gray_: #9B9B9B;
-$gray2: #929292;
-$lightblue: #99BAED;
-$lightblue2: #A3C1EF;
-$lightblue3: #FAFBFF;
-$lightblue4: #E5ECFE;
-$blue: #163561;
-$yellow: #FBB400;
-
+$yellow: #FFCD00;
+$brown: #5A1404;
+$red: #e63000;
 
 // MEDIA
 $xl: 'max-width: 1440px'; // laptop
@@ -24,4 +10,6 @@ $md: 'max-width: 768px'; // tablet
 $sm: 'max-width: 640px'; // phone
 
 //Fonts
-$RobotoCondensed: 'Roboto Condensed', sans-serif;
+$PFD_Bold: 'PFDinTextCondPro', sans-serif;
+$PFD_Medium: 'PFDinTextCondPro', sans-serif;
+$PFD_Regular: 'PFDinTextCondPro', sans-serif;

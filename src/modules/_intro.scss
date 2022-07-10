@@ -1,39 +1,27 @@
 .intro {    
-    font-family: 'Catamaran', sans-serif;
-    display: flex;
+    height: 50%;
+    background: $yellow;
 
-    @media ($md) {
-        text-align: center;
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
     }
 
-    &__logo {        
-        width: 70%;
-        z-index: 2;
-        margin-left: 50px;
-
-        @media ($lg) {
-            width: 80%;
-        }
-
-        @media ($md) {
-            width: 60%;
-        }
-
-        @media ($sm) {
-            width: 40%;
-        }
+    &__bg {
+        position: relative;
+        width: 100%;       
+        margin-top: -40px;        
     }
 
-    &__text {
-        margin-top: 50px;
-        color: $blue;
-        max-width: 520px;
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 38px;
-
-        @media ($md) {
-            max-width: none;
-        }
+    &__man {
+        width: 38%;
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        transform: rotateZ(-5deg);        
+        z-index: 2
     }
 }
